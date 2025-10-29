@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projetos - Organização Solidária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntarios.html">Voluntários</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="comunicacao.html">Comunicação</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container card">
+    <h2>Projetos Ativos</h2>
+    <div class="grid-3 projects-list">
+      <div class="project card">
+        <img src="https://images.unsplash.com/photo-1591012911203-6f68a12197b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Projeto Educação">
+        <div><strong>Projeto Educação</strong><p class="muted">Apoio a escolas e crianças em vulnerabilidade.</p></div>
+      </div>
+      <div class="project card">
+        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Projeto Saúde">
+        <div><strong>Projeto Saúde</strong><p class="muted">Campanhas de saúde e prevenção em comunidades carentes.</p></div>
+      </div>
+      <div class="project card">
+        <img src="https://images.unsplash.com/photo-1603415526960-f65a63f9f6c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Projeto Meio Ambiente">
+        <div><strong>Projeto Meio Ambiente</strong><p class="muted">Ações de sustentabilidade e preservação ambiental.</p></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Comunicação - Organização Solidária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntarios.html">Voluntários</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container card">
+  <h2>Comunicação</h2>
+  <div class="grid-2">
+    <div>
+      <p class="muted">Fique por dentro das novidades e participe das discussões.</p>
+      <ul>
+        <li>Boletins Mensais</li>
+        <li>Newsletter por E-mail</li>
+        <li>Grupos de Discussão Online</li>
+      </ul>
+    </div>
+    <img src="https://images.unsplash.com/photo-1590608897129-79bcf2f5d9de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Comunicação">
+  </div>
+</main>
+</body>
+</html>

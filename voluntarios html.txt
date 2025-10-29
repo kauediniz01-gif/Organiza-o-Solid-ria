@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Voluntários - Organização Solidária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntarios.html">Voluntários</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container card">
+  <h2>Voluntários Destaque</h2>
+  <div class="grid-3">
+    <div class="volunteer-card card">
+      <img src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Voluntário 1">
+      <strong>Maria Silva</strong>
+      <p class="muted">Coordenadora de Projetos</p>
+    </div>
+    <div class="volunteer-card card">
+      <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Voluntário 2">
+      <strong>João Santos</strong>
+      <p class="muted">Voluntário de Campo</p>
+    </div>
+    <div class="volunteer-card card">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Voluntário 3">
+      <strong>Ana Costa</strong>
+      <p class="muted">Assistente Social</p>
+    </div>
+  </div>
+</main>
+</body>
+</html>

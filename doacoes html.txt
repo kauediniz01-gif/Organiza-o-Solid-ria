@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Doações - Organização Solidária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntarios.html">Voluntários</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container card">
+  <h2>Faça Sua Doação</h2>
+  <div class="grid-2">
+    <form class="card">
+      <fieldset>
+        <label for="nomeDoacao">Nome Completo</label>
+        <input type="text" id="nomeDoacao" placeholder="Digite seu nome">
+      </fieldset>
+      <fieldset>
+        <label for="emailDoacao">E-mail</label>
+        <input type="email" id="emailDoacao" placeholder="Digite seu e-mail">
+      </fieldset>
+      <fieldset>
+        <label for="valor">Valor da Doação</label>
+        <input type="number" id="valor" placeholder="R$ 50,00">
+      </fieldset>
+      <fieldset>
+        <label for="metodo">Método de Pagamento</label>
+        <select id="metodo">
+          <option>Cartão de Crédito</option>
+          <option>Boleto Bancário</option>
+          <option>Pix</option>
+        </select>
+      </fieldset>
+      <button class="btn-cta" type="submit">Doar</button>
+    </form>
+    <img src="https://images.unsplash.com/photo-1586773860410-5aee7f9a3fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Doação">
+  </div>
+</main>
+</body>
+</html>

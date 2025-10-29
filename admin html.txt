@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Organização Solidária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntarios.html">Voluntários</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container card">
+  <h2>Área do Administrador</h2>
+  <div class="grid-2">
+    <div>
+      <p class="muted">Painel de controle para gerenciar projetos, voluntários, doações e comunicações.</p>
+      <ul>
+        <li>Gerenciamento de Projetos</li>
+        <li>Controle de Doações</li>
+        <li>Gestão de Voluntários</li>
+        <li>Relatórios e Métricas</li>
+      </ul>
+    </div>
+    <img src="https://images.unsplash.com/photo-1581090700227-95ec6bbd6598?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Dashboard Admin">
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Organização Solidária — Início</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntarios.html">Voluntários</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="comunicacao.html">Comunicação</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Transformando Vidas com Solidariedade</h1>
+        <p>Participe de nossos projetos, doe e ajude a mudar histórias.</p>
+      </div>
+      <div class="hero-aside">
+        <img src="https://images.unsplash.com/photo-1588776814546-d4d798a993d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=420" alt="Equipe voluntária">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

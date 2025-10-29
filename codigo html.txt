@@ -1,0 +1,260 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Organização Solidária — Plataforma Completa</title>
+  <style>
+    :root{
+      --accent-600: #1f7a73;
+      --accent-400: #2aa69a;
+      --muted: #6b7280;
+      --bg: #f6f8f9;
+      --card: #ffffff;
+      --max-width: 1200px;
+      --radius: 10px;
+      --shadow: 0 6px 22px rgba(21,32,43,0.08);
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,sans-serif;
+      line-height:1.5;
+      background:linear-gradient(180deg,#f6f8f9,#eef4f3);
+      color:#0b1320;
+    }
+    a{color:inherit;text-decoration:none;}
+    .container{max-width:var(--max-width);margin:0 auto;padding:1rem;}
+    header.site-header{
+      position:sticky;top:0;z-index:60;
+      background:linear-gradient(180deg,rgba(255,255,255,0.72),rgba(255,255,255,0.6));
+      backdrop-filter:blur(6px);
+      border-bottom:1px solid rgba(15,23,42,0.04);
+    }
+    .header-inner{
+      display:flex;align-items:center;justify-content:space-between;gap:1rem;
+      max-width:var(--max-width);margin:0 auto;padding:0.6rem 1rem;
+    }
+    .brand{display:flex;align-items:center;gap:0.75rem;font-weight:700;font-size:1.125rem;color:var(--accent-600);}
+    .brand .logo{
+      width:42px;height:42px;border-radius:8px;
+      background:linear-gradient(135deg,var(--accent-600),var(--accent-400));
+      display:inline-grid;place-items:center;color:white;font-weight:700;
+      box-shadow:0 4px 12px rgba(34,122,116,0.12);
+    }
+    nav.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:0.25rem;}
+    nav.main-nav a{display:inline-block;padding:0.55rem 0.75rem;border-radius:8px;color:#062126;font-weight:600;}
+    nav.main-nav a:hover, nav.main-nav a:focus{background:rgba(45,140,130,0.08);outline:none;}
+    .btn-cta{background:var(--accent-600);color:white;padding:0.5rem 0.9rem;border-radius:8px;font-weight:600;box-shadow:0 6px 18px rgba(31,122,115,0.12);}
+    .card{background:var(--card);border-radius:var(--radius);padding:1.1rem;margin-bottom:1rem;box-shadow:var(--shadow);}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+    .muted{color:var(--muted);font-size:0.95rem;}
+    .projects-list{display:grid;gap:0.9rem;}
+    .project{display:flex;gap:1rem;align-items:flex-start;}
+    .project img{width:160px;height:100px;object-fit:cover;border-radius:8px;flex-shrink:0;}
+    .volunteer-card img{width:100%;height:140px;object-fit:cover;border-radius:8px;}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center;padding:2.2rem 1rem;max-width:var(--max-width);margin:1.2rem auto;}
+    .hero img{width:100%;border-radius:8px;box-shadow:var(--shadow);}
+    fieldset{margin-bottom:1rem;display:flex;flex-direction:column;}
+    fieldset label{margin-bottom:0.3rem;font-weight:600;}
+    fieldset input, fieldset select{padding:0.5rem;border-radius:6px;border:1px solid #ccc;}
+    button{cursor:pointer;border:none;}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;gap:1rem;padding:1.2rem;}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+    @media (max-width:700px){nav.main-nav{display:none}}
+  </style>
+  <script>
+    function aplicarMascaras() {
+      const cpf = document.getElementById("cpf");
+      if(cpf){
+        cpf.addEventListener("input", () => {
+          cpf.value = cpf.value.replace(/\D/g, '')
+            .replace(/(\d{3})(\d)/,'$1.$2')
+            .replace(/(\d{3})(\d)/,'$1.$2')
+            .replace(/(\d{3})(\d{1,2})$/,'$1-$2');
+        });
+      }
+      const telefone = document.getElementById("telefone");
+      if(telefone){
+        telefone.addEventListener("input", () => {
+          telefone.value = telefone.value.replace(/\D/g, '')
+            .replace(/(\d{2})(\d)/,'($1) $2')
+            .replace(/(\d{5})(\d)/,'$1-$2');
+        });
+      }
+      const cep = document.getElementById("cep");
+      if(cep){
+        cep.addEventListener("input", () => {
+          cep.value = cep.value.replace(/\D/g, '').replace(/(\d{5})(\d)/,'$1-$2');
+        });
+      }
+    }
+    window.onload = aplicarMascaras;
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand"><div class="logo">OS</div>Organização Solidária</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#voluntarios">Voluntários</a></li>
+        <li><a href="#doacoes">Doações</a></li>
+        <li><a href="#comunicacao">Comunicação</a></li>
+        <li><a href="#admin">Admin</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <h1>Transformando Vidas com Solidariedade</h1>
+      <p>Participe de nossos projetos, doe e ajude a mudar histórias.</p>
+    </div>
+    <div class="hero-aside">
+      <img src="https://images.unsplash.com/photo-1588776814546-d4d798a993d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=420" alt="Equipe voluntária">
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="card" id="projetos">
+    <h2>Projetos Ativos</h2>
+    <div class="grid-3 projects-list">
+      <div class="project card">
+        <img src="https://images.unsplash.com/photo-1591012911203-6f68a12197b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Projeto Educação">
+        <div><strong>Projeto Educação</strong><p class="muted">Apoio a escolas e crianças em vulnerabilidade.</p></div>
+      </div>
+      <div class="project card">
+        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Projeto Saúde">
+        <div><strong>Projeto Saúde</strong><p class="muted">Campanhas de saúde e prevenção em comunidades carentes.</p></div>
+      </div>
+      <div class="project card">
+        <img src="https://images.unsplash.com/photo-1603415526960-f65a63f9f6c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Projeto Meio Ambiente">
+        <div><strong>Projeto Meio Ambiente</strong><p class="muted">Ações de sustentabilidade e preservação ambiental.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTÁRIOS -->
+  <section class="card" id="voluntarios">
+    <h2>Voluntários Destaque</h2>
+    <div class="grid-3">
+      <div class="volunteer-card card">
+        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Voluntário 1">
+        <strong>Maria Silva</strong>
+        <p class="muted">Coordenadora de Projetos</p>
+      </div>
+      <div class="volunteer-card card">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Voluntário 2">
+        <strong>João Santos</strong>
+        <p class="muted">Voluntário de Campo</p>
+      </div>
+      <div class="volunteer-card card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=160" alt="Voluntário 3">
+        <strong>Ana Costa</strong>
+        <p class="muted">Assistente Social</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOAÇÕES -->
+  <section class="card" id="doacoes">
+    <h2>Faça Sua Doação</h2>
+    <div class="grid-2">
+      <form class="card">
+        <fieldset>
+          <label for="nomeDoacao">Nome Completo</label>
+          <input type="text" id="nomeDoacao" placeholder="Digite seu nome">
+        </fieldset>
+        <fieldset>
+          <label for="emailDoacao">E-mail</label>
+          <input type="email" id="emailDoacao" placeholder="Digite seu e-mail">
+        </fieldset>
+        <fieldset>
+          <label for="valor">Valor da Doação</label>
+          <input type="number" id="valor" placeholder="R$ 50,00">
+        </fieldset>
+        <fieldset>
+          <label for="metodo">Método de Pagamento</label>
+          <select id="metodo">
+            <option>Cartão de Crédito</option>
+            <option>Boleto Bancário</option>
+            <option>Pix</option>
+          </select>
+        </fieldset>
+        <button class="btn-cta" type="submit">Doar</button>
+      </form>
+      <img src="https://images.unsplash.com/photo-1586773860410-5aee7f9a3fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Doação">
+    </div>
+  </section>
+
+  <!-- COMUNICAÇÃO -->
+  <section class="card" id="comunicacao">
+    <h2>Comunicação</h2>
+    <div class="grid-2">
+      <div>
+        <p class="muted">Fique por dentro das novidades e participe das discussões.</p>
+        <ul>
+          <li>Boletins Mensais</li>
+          <li>Newsletter por E-mail</li>
+          <li>Grupos de Discussão Online</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1590608897129-79bcf2f5d9de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Comunicação">
+    </div>
+  </section>
+
+  <!-- ADMIN -->
+  <section class="card" id="admin">
+    <h2>Área do Administrador</h2>
+    <div class="grid-2">
+      <div>
+        <p class="muted">Painel de controle para gerenciar projetos, voluntários, doações e comunicações.</p>
+        <ul>
+          <li>Gerenciamento de Projetos</li>
+          <li>Controle de Doações</li>
+          <li>Gestão de Voluntários</li>
+          <li>Relatórios e Métricas</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1581090700227-95ec6bbd6598?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Dashboard Admin">
+    </div>
+  </section>
+
+  <!-- CADASTRO -->
+  <section class="card" id="cadastro">
+    <h2>Formulário de Cadastro</h2>
+    <div class="grid-2">
+      <form>
+        <fieldset><label for="nome">Nome Completo</label><input type="text" id="nome" name="nome" required></fieldset>
+        <fieldset><label for="email">E-mail</label><input type="email" id="email" name="email" required></fieldset>
+        <fieldset><label for="cpf">CPF</label><input type="text" id="cpf" name="cpf" maxlength="14" required></fieldset>
+        <fieldset><label for="telefone">Telefone</label><input type="text" id="telefone" name="telefone" maxlength="15" required></fieldset>
+        <fieldset><label for="nascimento">Data de Nascimento</label><input type="date" id="nascimento" name="nascimento" required></fieldset>
+        <fieldset><label for="endereco">Endereço</label><input type="text" id="endereco" name="endereco" required></fieldset>
+        <fieldset><label for="cep">CEP</label><input type="text" id="cep" name="cep" maxlength="9" required></fieldset>
+        <fieldset><label for="cidade">Cidade</label><input type="text" id="cidade" name="cidade" required></fieldset>
+        <fieldset><label for="estado">Estado</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espírito Santo</option>
+          </select>
+        </fieldset>
+        <button type="submit" class="btn-cta">Enviar Cadastro</button>
+      </form>
+      <img src="https://images.unsplash.com/photo-1581092580499-43260b9122f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Cadastro">
+    </div>
+  </section>
+</main>
+</body>
+</html>
